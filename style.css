@@ -1,0 +1,125 @@
+@keyframes anim1{
+    0%{
+        top:0px;
+    }
+    50%{
+        top:450px;
+       
+    }
+    100%{
+        top:0px;
+    }
+    
+}
+.imp_links{
+    font-family: 'Permanent Marker', cursive;
+    font-size:20px;
+    color:black;
+
+    
+}
+#main_heading{
+    font-family: Shizuru,cursive;
+    font-size:50px;
+    color: antiquewhite;
+    text-align: center;
+}
+body{
+ /* background-color:#F6D8AE; */
+ /* background-image: url("tokyo_tower.jpg"); */
+ background-color: #7776BC;
+ background-size: cover;
+}
+
+/* h2{
+    animation-name: anim1;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+} */
+
+.dont_click{
+    font-family: sans-serif;
+    font-size:50 px;
+    color:#DA4167;
+    padding:30px 40px 30px 40px;
+
+    position:relative;
+    left:45%;
+    top:10%;
+    height:auto;
+    width:fit-content;
+    }
+
+.dark-black-border{
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    border-radius:15px;
+
+    background: repeating-linear-gradient(
+  45deg,
+  yellow 0px,
+  yellow 40px,
+  black 40px,
+  black 80px
+);
+
+}
+
+.box {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+
+
+.subheading{
+    font-family: "Indie Flower", cursive;
+    font-size: 30px;
+    color: black;
+}
+
+.image_prop{
+    /* position: relative;
+    z-index: 10; */
+    width: 45vw;
+    height: 35vw;
+    box-shadow: 10px 10px 30px 5px #FFFBDB;
+}
+
+.image_prop:hover{
+    width: 50vw;
+    height: 40vw;
+    box-shadow: 10px 10px 30px 5px #FFFBDB;
+    transition: 1s ease-out;
+}
+
+.fa-twitter {
+    padding: 20px;
+    font-size: 5vw;
+    width: 5vw;
+    text-align: center;
+    text-decoration: none;
+}
+.fa-github{
+    padding: 20px;
+    font-size: 5vw;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover{
+    padding: 20px;
+    font-size: 7vw;
+    width: 5vw;
+    text-align: center;
+    text-decoration: none;
+    transition: 1s ease-out;
+}
+
+.box_end{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
