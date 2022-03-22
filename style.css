@@ -11,6 +11,12 @@
     }
     
 }
+
+@keyframes anim2{
+    0%{
+        
+    }
+}
 .imp_links{
     font-family: 'Permanent Marker', cursive;
     font-size:20px;
@@ -24,12 +30,44 @@
     color: antiquewhite;
     text-align: center;
 }
-body{
- /* background-color:#F6D8AE; */
- /* background-image: url("tokyo_tower.jpg"); */
+@keyframes anim2{
+    0%{
+        transform: rotate(60deg);
+        opacity: 0;
+    }
+    25%{
+        transform: rotate(30deg);
+        opacity: 1;
+    }
+
+    95%{
+        transform: rotate(0.5deg);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+#top-heading{
+    overflow: hidden;
+    background-color: aquamarine;
+
+}
+.main_heading2{
+    font-family: 'Righteous', cursive;
+    transform-origin: left;
+    font-size: 50px;
+    color: #1d76db;
+    animation: anim2 2s ease-out 1s ;
+    
+}
+/* body{
+ background-color:#F6D8AE; 
+ background-image: url("tokyo_tower.jpg"); 
  background-color: #7776BC;
  background-size: cover;
-}
+} */
 
 /* h2{
     animation-name: anim1;
@@ -80,21 +118,53 @@ body{
     color: black;
 }
 
-.image_prop{
-    /* position: relative;
-    z-index: 10; */
+.subheading2{
+    font-family: "Indie Flower", cursive;
+    font-size: 30px;
+    color: rgb(100, 186, 226);
+    margin-right: 20px;
+}
+
+.about_contact_container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.image_prop_left{
+    margin: 20px 40px 20px 20px;
     width: 45vw;
     height: 35vw;
     box-shadow: 10px 10px 30px 5px #FFFBDB;
 }
 
-.image_prop:hover{
-    width: 50vw;
-    height: 40vw;
+/* .image_prop_left:hover{
+    width: 48vw;
+    height: 38vw;
+     position: absolute; 
+    left: 2vw;
+    z-index: 2;
     box-shadow: 10px 10px 30px 5px #FFFBDB;
     transition: 1s ease-out;
+    
+} */
+
+.image_prop_right{
+    margin: 20px 40px 20px 20px;
+    width: 45vw;
+    height: 35vw;
+    box-shadow: 10px 10px 30px 5px #FFFBDB;
 }
 
+/* .image_prop_right:hover{
+    width: 48vw;
+    height: 38vw;
+     position: absolute; 
+    right: 2vw;
+    z-index: 2;
+    box-shadow: 10px 10px 30px 5px #FFFBDB;
+    transition: 1s ease-out;
+    
+} */
 .fa-twitter {
     padding: 20px;
     font-size: 5vw;
@@ -122,4 +192,10 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.bg_image{
+    background-image: url('laptop_image2.jpg');
+    background-size: cover;
+    
 }
